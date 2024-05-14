@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+    <title>To-do List</title>
 </head>
 <body>
     <main>
-        <section class="add_todo small-screen">
+
+        <section class="add_todo">
             <input type="text" class="todo" placeholder="Add a new task">
             <button id="add_task" class="add-todo" disabled onclick="addTask()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
@@ -20,9 +24,8 @@
                         stroke-linejoin="round" stroke-width="16"></line>
                 </svg>
             </button>
-
-
         </section>
+
         <section class="display_todo hidden" id="display_todo">
             <h1 class="tasks">Tasks - <span id="task-count"></span> </h1>
             <ul class="todos" id="todos">
@@ -36,8 +39,7 @@
             <ul class="done" id="done">
             </ul>
         </section>
-
     </main>
-    <script src="script.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>

@@ -36,7 +36,7 @@ input[type="text"] {
     height: 100%;
     width: 100%;
     padding: 0px 1rem;
-    margin: 0.5rem;
+    margin: 0.4rem;
     border-radius: 0.625rem;
     color: #9e78cf;
 
@@ -55,7 +55,7 @@ button.add-todo {
 
 button.add-todo>svg {
     background: inherit;
-    background-color: none;
+
 }
 
 
@@ -65,7 +65,6 @@ button.add-todo:hover {
 
 section.display_todo,
 section.display-done {
-    position: relative;
     max-width: 500px;
     width: 100%;
     flex-direction: column;
@@ -74,9 +73,6 @@ section.display-done {
 
 }
 
-section.display-done {
-    margin-top: -4rem;
-}
 
 .hidden {
     display: none;
